@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <style>
+        .columns {
+            -webkit-column-count: 5;
+            column-count: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="page-break-before: always">Navigator properties:</p>
+    <div class="columns">
+        <script>
+            for (var prop in navigator) {
+                document.write(prop + ": " + navigator[prop] + "<br>");
+            }
+        </script>
+    </div>
+    <p style="page-break-before: always">Window Properties:</p>
+    <div class="columns">
+        <script>
+            for (var prop in window) {
+                document.write(prop + ": " + window[prop] + "<br>");
+            }
+        </script>
+    </div>
+</body>
+
+</html>
